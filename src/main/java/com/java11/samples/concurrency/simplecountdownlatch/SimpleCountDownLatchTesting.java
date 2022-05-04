@@ -4,7 +4,7 @@ import java.util.concurrent.Executors;
 
 public class SimpleCountDownLatchTesting {
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
 
         SimpleCountDownLatch simpleCountDownLatch = new SimpleCountDownLatch(10);
 

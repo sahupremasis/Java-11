@@ -8,7 +8,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class LionsAndTigers {
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         List<Integer> lions = new ArrayList<>(List.of(1, 2, 3));
         List<Integer> tigers = new CopyOnWriteArrayList<>(lions);
 
@@ -21,7 +21,7 @@ public class LionsAndTigers {
             bears.add(5);
         }
 
-        System.out.println(" lions: " + lions.size() + " tigers: " + tigers.size() + " bears " + bears.size() );
+        System.out.println(" lions: " + lions.size() + " tigers: " + tigers.size() + " bears " + bears.size());
     }
 
 }

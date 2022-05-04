@@ -23,7 +23,7 @@ public class Flavors {
         System.out.println("counter: " + counter);
     }
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         Flavors flavors = new Flavors();
         flavors.countIcecreamFlavors();
     }

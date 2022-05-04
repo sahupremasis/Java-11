@@ -5,7 +5,7 @@ import java.util.List;
 
 public class MemoryManagementExample {
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         memoryLeakTest();
     }
 
@@ -13,8 +13,8 @@ public class MemoryManagementExample {
         System.out.println("memoryLeakTest");
         List<String> list = new ArrayList<>();
         try {
-            int i  = 0;
-            while(true) {
+            int i = 0;
+            while (true) {
                 list.add("Hello World! " + i++);
             }
         } finally {

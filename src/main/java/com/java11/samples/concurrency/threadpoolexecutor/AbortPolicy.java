@@ -1,14 +1,12 @@
 package com.java11.samples.concurrency.threadpoolexecutor;
 
-import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-import static java.lang.Process.*;
 
 public class AbortPolicy {
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         System.out.println("Test");
 
 

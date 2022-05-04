@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class InstantExample {
 
-    public static void main(String [] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         Instant first = Instant.now();
 
 

@@ -26,12 +26,12 @@ public class Movie {
 
     protected class Popcorn {
         public static final int butter = 10;
-
+        Consumer<Camel> camelConsumer = (final Camel c) -> {
+        };
+        BiConsumer<String, Integer> biConsumer = (i, j) -> {
+        };
         private Popcorn() {
         }
-
-        Consumer<Camel> camelConsumer = (final Camel c) -> {};
-        BiConsumer<String, Integer> biConsumer = (i, j) -> {};
 
         public void startMovie() {
             System.out.println(butter);

@@ -4,10 +4,9 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class SimpleCountDownLatch {
-    private int count;
-
     ReentrantLock reentrantLock = new ReentrantLock();
     Condition awaitCondition = reentrantLock.newCondition();
+    private int count;
 
     public SimpleCountDownLatch(int count) {
         this.count = count;
@@ -32,8 +31,8 @@ public class SimpleCountDownLatch {
     }
 
     /**
-     *  Decrements the count of the latch, releasing all waiting threads when the count reaches zero.
-     *  If the current count already equals zero then nothing happens.
+     * Decrements the count of the latch, releasing all waiting threads when the count reaches zero.
+     * If the current count already equals zero then nothing happens.
      */
     public void countDown() {
         try {

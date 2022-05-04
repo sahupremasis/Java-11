@@ -1,14 +1,13 @@
 package com.java11.samples.algorithms;
 
 import java.nio.ByteBuffer;
-import java.util.Arrays;
 
 public class LongToByteArray {
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         System.out.println("Testing");
         byte[] bytes = longToBytes(513);
-        for (byte b : bytes) {
+        for(byte b : bytes) {
             System.out.println(b);
         }
     }

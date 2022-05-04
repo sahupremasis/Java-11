@@ -5,9 +5,9 @@ import java.lang.ref.ReferenceQueue;
 import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
 
-class Gfg
-{
+class Gfg {
     int i = 0;
+
     public void x(int i) {
         this.i = i;
         System.out.println("Gfg x function " + this.i);
@@ -23,7 +23,7 @@ class Gfg
 
 public class WeakReferenceExample {
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         weakReference();
         System.out.println("-------------------------------------------------");
         softReference();

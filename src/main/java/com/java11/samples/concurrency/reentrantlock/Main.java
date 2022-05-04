@@ -40,7 +40,9 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -160,7 +162,7 @@ public class Main extends Application {
 
     private void addLabelsToGrid(Map<String, Label> labels, GridPane grid) {
         int row = 0;
-        for (Map.Entry<String, Label> entry : labels.entrySet()) {
+        for(Map.Entry<String, Label> entry : labels.entrySet()) {
             String cryptoName = entry.getKey();
             Label nameLabel = new Label(cryptoName);
             nameLabel.setTextFill(Color.BLUE);
@@ -176,7 +178,8 @@ public class Main extends Application {
 
     private Rectangle createBackgroundRectangleWithAnimation(double width, double height) {
         Rectangle backround = new Rectangle(width, height);
-        FillTransition fillTransition = new FillTransition(Duration.millis(1000), backround, Color.LIGHTGREEN, Color.LIGHTBLUE);
+        FillTransition fillTransition = new FillTransition(Duration.millis(1000), backround, Color.LIGHTGREEN,
+                                                           Color.LIGHTBLUE);
         fillTransition.setCycleCount(Timeline.INDEFINITE);
         fillTransition.setAutoReverse(true);
         fillTransition.play();
